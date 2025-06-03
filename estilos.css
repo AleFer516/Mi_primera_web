@@ -1,6 +1,7 @@
 body{
-    margin: 0;
-    padding: 0;
+    
+    margin: 0;  /* margen  de todo en general*/
+    padding: 0;  /* espacio entre los archivos y el borde*/
     background-color:rgb(255, 255, 255);
     font-family:Arial, Helvetica, sans-serif
 }
@@ -10,8 +11,8 @@ header{
     background-color: rgb(255, 255, 255);
     padding:1rem 2rem;
     height: 50px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* alineado del contenido*/
+    justify-content: space-between; /* justificado al inicio y al final*/
     align-items: center;
 }
 
@@ -20,12 +21,6 @@ nav ul{
     gap: 20px;
     list-style: none;
 }
-nav ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
 
 nav a{
     color: #b069e8;
@@ -134,4 +129,15 @@ nav a{
 .derecha:hover {
   transform: scale(1.2);
   color: #000;              
+}
+.lectura{
+    background-image: url(imagenes/fondo\ lectura.jpg);
+    padding: 10px;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.lectura p{
+    margin-top: 0;
 }
