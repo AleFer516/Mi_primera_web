@@ -10,21 +10,24 @@
 
     <!--Encabezado-->
     <header>
-    <div class="logo">Ale Fernandez</div>
-    <nav>
-        <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li class="menu_hobbies">
-            <a href="#">Hobbies</a>
-            <ul class="menu_contenido">
-            <li><a href="lectura.html">Lectura</a></li>
-            <li><a href="juegos.html">Juegos</a></li>
-            <li><a href="musica.html">Música</a></li>
-            <li><a href="#viajes">Deportes</a></li>
-            </ul>
-        </li>
-        </ul>
-    </nav>
+        <div class="contenedor">
+            <div class="logo">Ale Fernandez</div>
+            <nav>
+                <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li class="menu_hobbies">
+                    <a href="#hobbies">Hobbies</a>
+                    <ul class="menu_contenido">
+                    <li><a href="lectura.html">Lectura</a></li>
+                    <li><a href="juegos.html">Juegos</a></li>
+                    <li><a href="musica.html">Música</a></li>
+                    <li><a href="deportes.html">Deportes</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
@@ -50,9 +53,9 @@ Mi objetivo es seguir desarrollando habilidades tanto técnicas como personales,
     </section>
 
     <!--Hobbies-->
-    <section class="hobbies">
+    <section class="hobbies" id="hobbies">
     <div class="hobbies_grid">
-        <!-- Fila 1 -->
+        
         <div class="tarjeta">
         <img src="imagenes/lectura.jpg" alt="Lectura">
         <p><a href="lectura.html">Lectura</a></p>
@@ -74,14 +77,26 @@ Mi objetivo es seguir desarrollando habilidades tanto técnicas como personales,
         </div>
         <!-- espacio vacío en el centro -->
         <div class="tarjeta">
-        <img src="imagenes/viajar.jpeg" alt="Viajar">
-        <p><a href="#">viajes</a></p>
+        <img src="imagenes/trekking.jpg" alt="deportes">
+        <p><a href="deportes.html">Deportes</a></p>
         </div>
     </div>
     </section>
 
-
-
+    <section id="estudios" class="estudios">
+    <div class="texto">
+        <p class="carrera">Analista programador</p>
+        <h4>Mi camino en el mundo del conocimiento</h4>
+        <p>
+        Mi formación ha sido una mezcla de creatividad y tecnología. Comencé estudiando Diseño e Integración Multimedia, donde aprendí sobre diseño de logos, 
+        páginas web, edición de video, uso de pantalla verde y otros aspectos del mundo audiovisual. Luego decidí explorar más el área técnica a través de un 
+        curso de programación con Arduino, motivada por mi interés constante en la informática. Actualmente estoy estudiando la carrera de Analista Programador, 
+        con la meta de seguir avanzando hacia la Ingeniería Informática. Cada paso ha sido una oportunidad para descubrir nuevas habilidades y seguir creciendo 
+        profesionalmente.
+        </p>
+    </div>
+    <img src="imagenes/tecnologia.jpg" alt="fondo tecnología">
+    </section>
 
     </body>
     <footer>

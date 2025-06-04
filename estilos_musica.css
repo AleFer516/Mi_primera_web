@@ -1,22 +1,29 @@
 body{
-    
-    background-size: cover;
     margin: 0;  
     padding: 0;  
-    background-color:rgb(132, 66, 194);
+    background-color:#b069e8;
     font-family: cursive;
     overflow-x: hidden;
 }
 
 header{
+    position: fixed;
+    width: 100%;
     font-family: cursive;
-    background-color: #ffffff;
-    padding:1rem 5rem;
+    background-color: rgb(255, 255, 255);
+    padding:1rem;
     height: 50px;
-    display: flex; 
-    justify-content: space-between; 
     align-items: center;
 }
+.contenedor {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 nav ul{
     display: flex;
@@ -75,53 +82,55 @@ nav a{
     background-color: #ffffff;
 }
 
-.musica {
-  padding: 60px 40px;
-  color: rgb(255, 255, 255);
-  font-family: cursive;
+.musica{
+    padding: 2rem 8rem;
+    justify-content: center;
+    font-family: cursive;
+    text-align: justify;
 }
-
-.musica h2{
+h1{
+    margin-top: 180px;
+    font-family:cursive;
+    text-align: center;
     font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+.intro{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    text-align: justify;
+}
+
+.intro img{
+    width: 300px;
+    height: auto;
+}
+.galeria_musica{
+    padding: 30px;
+    font-family: cursive;
     text-align: center;
 }
+.carrusel_musica{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
 
-.musica p{
-    font-weight: lighter;
-    text-align: center;
-}
-.contenedor_musica {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
 }
 
-.bloque_musical {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  width: 100%;
-  max-width: 1000px;
+.carrusel_musica img{
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
-.bloque_musical.invertida {
-  flex-direction: row-reverse;
-}
-
-.video-img {
-  width: 400px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.video-img:hover {
-  transform: scale(1.03);
-}
-
-.texto_musical {
-  max-width: 400px;
-  font-size: 1.3em;
-  line-height: 1.5;
+.carrusel_musica img:hover {
+    transform: scale(1.05);
 }
