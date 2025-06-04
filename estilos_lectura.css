@@ -1,0 +1,129 @@
+body{
+    margin: 0;  
+    padding: 0;  
+    background-color:rgb(255, 255, 255);
+    font-family: cursive;
+    overflow-x: hidden;
+}
+
+header{
+    font-family: cursive;
+    background-color: #b069e8;
+    padding:1rem 5rem;
+    height: 50px;
+    display: flex; /* alineado del contenido*/
+    justify-content: space-between; /* justificado al inicio y al final*/
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.menu_hobbies {
+    position: relative;
+    
+}
+
+.menu_contenido {
+    display: none;
+    position: absolute;
+    background-color: rgba(95, 18, 158, 0.788);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.menu_hobbies:hover .menu_contenido {
+    display: flex;
+}
+.menu_contenido li {
+    margin: 0;  
+    padding: 0; 
+}
+.menu_contenido a {
+    color: #000000;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+}
+
+.menu_contenido a:hover {
+    background-color: #ffffff;
+}
+
+.lectura{
+    padding: 2rem 8rem;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    text-align: justify;
+}
+h1{
+    font-family:cursive;
+    text-align: center;
+    font-size: 30px;
+}
+
+.intro{
+    margin: 0 auto;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 2rem;
+    gap: 30px;
+    text-align: justify;
+   
+
+   
+}
+
+.intro img{
+    width: 150px;
+    height: auto;
+}
+.galeria_libros{
+    padding: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+.carrusel_libros{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.carrusel_libros img{
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.carrusel_libros img:hover {
+    transform: scale(1.05);
+}

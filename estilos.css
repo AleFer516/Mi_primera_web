@@ -1,15 +1,15 @@
 body{
-    
-    margin: 0;  /* margen  de todo en general*/
-    padding: 0;  /* espacio entre los archivos y el borde*/
+    margin: 0;  
+    padding: 0;  
     background-color:rgb(255, 255, 255);
-    font-family:Arial, Helvetica, sans-serif
+    font-family: cursive;
+    overflow-x: hidden;
 }
 
 header{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
     background-color: rgb(255, 255, 255);
-    padding:1rem 2rem;
+    padding:1rem 5rem;
     height: 50px;
     display: flex; /* alineado del contenido*/
     justify-content: space-between; /* justificado al inicio y al final*/
@@ -18,7 +18,7 @@ header{
 
 nav ul{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     list-style: none;
 }
 
@@ -34,17 +34,52 @@ nav a{
     font-size: 20px;
     color: #b069e8;
 }
+.menu_hobbies {
+    position: relative;
+    
+}
 
+
+.menu_contenido {
+    display: none;
+    position: absolute;
+    background-color: rgba(95, 18, 158, 0.788);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.menu_hobbies:hover .menu_contenido {
+    display: flex;
+}
+.menu_contenido li {
+    margin: 0;  
+    padding: 0; 
+}
+.menu_contenido a {
+    color: #000000;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+    display: block;
+}
+
+.menu_contenido a:hover {
+    background-color: #ffffff;
+}
 .bienvenida{
     background-image: url(imagenes/bienvenida.jpg);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
-    align-items: center;
     padding: 20px 100px;
     height: 350px;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,81 +98,80 @@ nav a{
     border-radius: 50%;
 }
 .sobre_mi{
-    height: 150px;
+    margin: 0 auto;
+    max-width: 900px;
     display: flex;
     align-items: center;
     align-content: center;
-    padding: 4rem 7rem;
+    padding: 7rem 7rem;
     gap: 30px;
     text-align: justify;
     background-color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.hobbies{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    width: 100vw;
-    box-sizing: border-box;
 
+.hobbies {
+  background-color: #652D90;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #ffffff;
 }
-.contenedor {
-    display: flex;
-    gap: 15px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    width: 100%;  
-    max-width: 480px;
+
+.hobbies_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
 }
-.tarjetas{
-    border: 2px solid #000000;
-    position: relative;
-    width: 150px;
-    height: 150px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+.intro_centrada {
+  grid-column: 2;
+  grid-row: 1 / span 2; /* ocupa 2 filas */
+  text-align: center;
+  max-width: 400px;
 }
-.tarjetas img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    display: block;
+
+.intro_centrada h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin-bottom: 1rem;
 }
-.tarjetas p{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    color: aliceblue;
-    text-align: center;
+
+.intro_centrada p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
 }
-.izquierda,
-.derecha{
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #b069e8;
-    padding: 10px;
-    transition: transform 0.2s ease;
+
+.tarjeta {
+  width: 250px;
+  text-align: center;
+  text-decoration: none;
 }
-.izquierda:hover,
-.derecha:hover {
-  transform: scale(1.2);
-  color: #000;              
+
+.tarjeta img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(154, 108, 214, 0.8);
 }
-.lectura{
-    background-image: url(imagenes/fondo\ lectura.jpg);
-    padding: 10px;
-    background-size: cover;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+
+.tarjeta p {
+  font-weight:bolder;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.lectura p{
-    margin-top: 0;
+
+.tarjeta p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tarjeta p a:hover {
+  text-decoration: underline;
+  color: #e0b3ff; /* o el color que prefieras al pasar el mouse */
 }

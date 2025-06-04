@@ -4,19 +4,30 @@
             Mi web
         </title>
         <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
 
     <!--Encabezado-->
     <header>
-        <div class="logo">Ale Fernandez</div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a><li>
-                <li><a href="#">Hobbies</a></li>
+    <div class="logo">Ale Fernandez</div>
+    <nav>
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="menu_hobbies">
+            <a href="#">Hobbies</a>
+            <ul class="menu_contenido">
+            <li><a href="lectura.html">Lectura</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a href="#viajes">Deportes</a></li>
             </ul>
-        </nav>
-    </header> 
+        </li>
+        </ul>
+    </nav>
+    </header>
+
+
 
     <!--Bienvenida-->
     <section class="bienvenida">
@@ -40,41 +51,37 @@ Mi objetivo es seguir desarrollando habilidades tanto técnicas como personales,
 
     <!--Hobbies-->
     <section class="hobbies">
-        <button class="izquierda" onclick="scrollhobbies(-1)">❮</button>
-        <div class="contenedor" id="carrusel">
-        <div class="tarjetas"><img src="imagenes/lectura.jpg" alt="imagen de lectura">
-            <p>Lectura</p>
+    <div class="hobbies_grid">
+        <!-- Fila 1 -->
+        <div class="tarjeta">
+        <img src="imagenes/lectura.jpg" alt="Lectura">
+        <p><a href="lectura.html">Lectura</a></p>
         </div>
-        <div class="tarjetas"><img src="imagenes/trekking.jpg" alt="imagen de trekking">
-            <p>Deportes</p>
+        <div class="intro_centrada">
+        <h3>Mis hobbies, mis pasiones</h3>
+        <p>Además del estudio y el trabajo, hay actividades que llenan mis días de energía, creatividad y equilibrio.  
+            Aquí comparto algunos de mis hobbies, aquellos que me inspiran, me relajan y me conectan con lo que más disfruto hacer en mi tiempo libre.</p>
         </div>
-        <div class="tarjetas"><img src="imagenes/juegos.jpeg" alt="juego en pc">
-            <p>Juegos</p>
+        <div class="tarjeta">
+        <img src="imagenes/juegos.jpeg" alt="Juegos">
+        <p><a href="juegos.html">Juegos</a></p>
         </div>
-        <div class="tarjetas"><img src="imagenes/musica.jpg" alt="musica">
-            <p>Musica</p>
+
+        <!-- Fila 2 -->
+        <div class="tarjeta">
+        <img src="imagenes/musica.jpg" alt="Música">
+        <p><a href="musica.html">Musica</a></p>
         </div>
-        <div class="tarjetas"><img src="imagenes/estudiar.jpeg" alt="estudiar">
-            <p>Estudios</p>
+        <!-- espacio vacío en el centro -->
+        <div class="tarjeta">
+        <img src="imagenes/viajar.jpeg" alt="Viajar">
+        <p><a href="#">viajes</a></p>
         </div>
-        <div class="tarjetas"><img src="imagenes/viajar.jpeg" alt="viajar">
-            <p>Viajar</p>
-        </div>
-        </div>
-        <button class="derecha" onclick="scrollhobbies(1)">❯</button>
+    </div>
     </section>
 
-    <section class="lectura"></section>  
-    <p>La lectura ha sido una de mis pasiones mas constantes. A lo largo de los años he leido mas de 100 libros de 
-        generos distintos, desde terror y fantasia hasta noelas historicas y literatura contemporanea. Cada historia
-        me ha dejado una huella distinta, pero algunas han marcado un antes y un despues en mi forma de ver el mundo
-        como "It","La biblia de los caidos","El año del verano que nunca llego","La niña Alemana". Para mi leer no 
-        es solo un pasatiempo, es una forma de viajar, de aprender y de conectar con emociones profundas.
-    </p>
 
 
-    
-     
 
     </body>
     <footer>
