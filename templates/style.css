@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif; /*fuente para todo el cuerpo*/
+    margin: 0; /*margen de todo el texo*/
+    padding: 0; /*espacio entre el contenido del cuerpo*/
+}
+
+.container { 
+    width: 80%; /*el ancho que va a usar el contenedor en la pagina*/
+    margin: 0 auto; /* centra todo el contenedor horizonal*/
+    padding: 20px 0;/*agrega un espacio arriba y abajo de la pagina*/
+}
+
+header {
+    background-color: #333; /*color que se le agrego al encabezado*/
+    color: #fff; /*color del contenido*/
+    text-align: center; /*texto alineado en el centro*/
+    padding: 100px 0; 
+}
+
+header h1 {
+    font-size: 2.5em; /*tamañano del titulo*/
+}
+
+.btn { /*boton de caracteristicas*/
+    display: inline-block; /*hace que se alinee al lado de otras cosas como si fuera un texto pero que tambien se le pueda dar forma como de boton */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none; /*el texto no tiene ningun tipo de decoracion, en este caso le quita la linea del link*/
+    border-radius: 5px; /*borde que se le da al boton para que no quede cuadrado*/
+    transition: background-color 0.3s ease; /*al poner el mouse encima suavisa el cambio del color*/
+}
+
+.btn:hover {
+    background-color: #0056b3; /*color que se cambia al poner el puntero encima*/
+}
+
+section {
+    padding: 50px 0; 
+}
+
+h2 {
+    text-align: center;
+}
+
+.feature {
+    text-align: center; /*centra el bloque*/
+    margin-bottom: 30px; /*espacio entre el contenido*/
+}
+
+.feature h3 {
+    font-size: 1.5em;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial cite {
+    font-weight: bold; /*grosor de la fuente de la persona que hace la cita en este caso*/
+}
+
+form {
+    max-width: 600px; /*tamaño maximo del formulario*/
+    margin: 0 auto;
+}
+
+input[type="text"], /*aplica los estilos a campos de tipo texto*/
+input[type="email"], /*estilos a campos de tipo email*/
+textarea { /*permite varias lineas de texto*/
+    width: 100%; /*usa el 100% de contenedor*/
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /*color del borde de los formularios*/
+}
+
+button[type="submit"] { /*toma los botones que envian datos o dicen enviar y no son solo de hacer click*/
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;  /*el tipo del puntero al ponerlo encima del boton*/
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {  /*hover es un efecto que hace al pasar el mouse encima*/
+    background-color: #0056b3;
+}
+
+footer { /*derechos de autor*/
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
