@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"> <!--Idioma en el que se va a trabajar el documento, en este caso español-->
+<head>
+    <meta charset="UTF-8"> <!--Es la codificacion que se usa para que se puedan aceptar caracteres del teclado en español como la letra ñ o tildes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- una configuracion para que la pagina se adapte a celulares-->
+    <title>Landing Page</title><!--Titulo de la pestaña del navegador-->
+    <link rel="stylesheet" href="style.css"><!--Conexion con el archivo donde se agregan los estilos de diseño de la pagina-->
+</head>
+<body>
+
+<header>
+    <div class="container"><!--contenedor para separar lo que este adentro-->
+        <h1>¡Bienvenido a nuestra página!</h1>
+        <p>Sitio web de muestra para una empresa ficticia</p>
+        <a href="#features" class="btn">Ver características</a> <!--referencia en una parte de la pagina para dirigir ahi al hacer click-->
+    </div>
+</header>
+
+<section id="features"> <!--id en donde se pueden hacer referencias de la pagina o donde se va a redireccionar un enlace-->
+    <div class="container">
+        <h2>Características principales</h2>
+        <div class="feature"><!--todos los div para separar elementos y aplicar esilos a esa unica clase-->
+            <h3>Facilidad de uso</h3>
+            <p>Nuestra plataforma es fácil de usar para cualquier persona, sin importar su experiencia.</p>
+        </div>
+        <div class="feature">
+            <h3>Diseño moderno</h3>
+            <p>Nuestro diseño está actualizado con las últimas tendencias para brindar la mejor experiencia al usuario.</p>
+        </div>
+        <div class="feature">
+            <h3>Soporte 24/7</h3>
+            <p>Ofrecemos soporte técnico las 24 horas del día, los 7 días de la semana, para ayudarte en cualquier momento.</p>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials"> <!--seccion nueva en la pagina-->
+    <div class="container">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"¡Increíble servicio! ¡Gracias por hacer mi vida más fácil!"</p>
+            <cite>- Cliente feliz</cite> <!--cita para referenciar a quien hizo el testimonio-->
+        </div>
+        <div class="testimonial">
+            <p>"Nunca pensé que encontraría una solución tan genial. ¡Recomendado al 100%!"</p>
+            <cite>- Otro cliente satisfecho</cite>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form action="#" method="post"> <!--formulario para agregar datos-->
+            <input type="text" name="name" placeholder="Nombre" required> <!--el campo de nombre para que se ingrese el nombre-->
+            <input type="email" name="email" placeholder="Correo electrónico" required><!--required le muestra al cliente que es obligatorio-->
+            <textarea name="message" placeholder="Mensaje" required></textarea><!--place holder el texto que va en el cuadro antes de que se escriba algo-->
+            <button type="submit" class="btn">Enviar mensaje</button> <!--botton que deberia hacer la accion de enviar el mensaje-->
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Compañía XYZ. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
