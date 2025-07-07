@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../estilos/estilos_musica.css';
 import Navbar from '../components/navbar';
+import { iniciarCarruselMusica } from '../funciones/musica'; // 👈 agrega esto
 
 function Musica() {
+  useEffect(() => {
+    iniciarCarruselMusica(); // 👈 y esto
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -15,7 +20,10 @@ function Musica() {
             Mis bandas favoritas son Imagine Dragons y me encanta el pop en inglés. También tengo canciones que nunca faltan en mi playlist, como "Lost on You" de LP, que tiene ese algo especial que me
             conecta cada vez que la escucho.
           </p>
-          <img src="/src/assets/portada musica.png" alt="portada banda" />
+          <img 
+            src="/imagenes/hobbies/musica/portada_musica.png" 
+            alt="portada musica" 
+          />
         </div>
       </section>
 

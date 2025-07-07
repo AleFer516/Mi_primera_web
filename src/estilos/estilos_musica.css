@@ -41,12 +41,16 @@ p{
     font-family: cursive;
     text-align: center;
 }
-.carrusel_musica{
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    overflow-y: hidden;
+.carrusel_musica {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none; 
+}
 
+.carrusel_musica::-webkit-scrollbar {
+  display: none; 
 }
 
 .carrusel_musica img{

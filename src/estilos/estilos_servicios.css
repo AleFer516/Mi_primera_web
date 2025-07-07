@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2b0e3d; /* fondo general */
+  font-family: cursive;
+  overflow-x: hidden;
+}
+
+.servicios {
+  min-height: 100vh;
+  background-color: #2b0e3d; /* morado profundo */
+  color: #ffffff;
+  padding: 2rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.servicios h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.intro_servicios {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  color: #f7f3ff;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
+}
+
+.servicios_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.servicio {
+  max-width: 300px;
+  background-color: #ffffff10;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+}
+
+.servicio img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.servicio p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.servicio button {
+  margin-top: 1rem;
+  background-color: #b069e8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.servicio button:hover {
+  background-color: #8d47c5;
+  transform: scale(1.05);
+}
+
+.servicio button:active {
+  transform: scale(0.97);
+}
+
+.detalles_servicio {
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #eee;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.detalles_servicio h4 {
+  color: #ffc107;
+  margin-top: 1rem;
+}
+
+.detalles_servicio ul {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.galeria {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.galeria img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}

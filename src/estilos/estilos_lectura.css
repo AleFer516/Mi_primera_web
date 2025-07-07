@@ -1,7 +1,7 @@
 body{
     margin: 0;  
     padding: 0;  
-    background-color:rgb(255, 255, 255);
+    background-color: #f7f3ff !important;
     font-family: cursive;
     overflow-x: hidden;
 }
@@ -46,7 +46,12 @@ h1{
     gap: 10px;
     overflow-x: auto;
     overflow-y: hidden;
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
 
+.carrusel_libros::-webkit-scrollbar {
+  display: none; 
 }
 
 .carrusel_libros img{

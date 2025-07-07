@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import '../estilos/estilos.css';
+import '../estilos/estilos_servicios.css';
 import Navbar from '../components/navbar';
-import { toggleDetalles } from '../funciones/servicios.js';
-
 
 function Servicios() {
   const [detalles, setDetalles] = useState({
@@ -23,18 +21,17 @@ function Servicios() {
       <Navbar />
 
       <main className="servicios">
-        <h2>Nuestros servicios</h2>
+        <h2>Mis servicios</h2>
         <p className="intro_servicios">
           Me considero una mujer emprendedora, proactiva y con una gran motivación por aprender constantemente. Además de 
-          desarrollar mis habilidades en el área de la programación, también me dedico con entusiasmo a ofrecer distintos servicios que reflejan mi compromiso, creatividad y 
-          espíritu independiente. A través de estas actividades, no solo impulso mi crecimiento personal y profesional, sino que también busco entregar valor y calidad en cada 
-          experiencia que ofrezco.
+          desarrollar mis habilidades en el área de la programación, también me dedico con entusiasmo a ofrecer distintos servicios que reflejan mi compromiso, creatividad y espíritu independiente.
+          A través de estas actividades, no solo impulso mi crecimiento personal y profesional, sino que también busco entregar valor y calidad en cada experiencia que ofrezco.
         </p>
 
         <section className="servicios_grid">
           {/* Manicurista */}
           <div className="tarjeta servicio">
-            <img src="/src/assets/servicios/uñas.jpg" alt="Manicurista" />
+            <img src="/imagenes/servicios/uñas.jpg" alt="Manicurista" />
             <p><strong>Manicurista</strong></p>
             <p>Servicios de manicure profesional con diseños personalizados.</p>
             <button onClick={() => toggleDetalles('manicure')}>Conocer más</button>
@@ -50,7 +47,7 @@ function Servicios() {
                 <h4>Galería</h4>
                 <div className="galeria">
                   {[1, 2, 3, 4].map((n) => (
-                    <img key={n} src={`/src/assets/servicios/uñas${n}.jpg`} alt={`Uñas diseño ${n}`} />
+                    <img key={n} src={`/imagenes/servicios/uñas${n}.jpg`} alt={`Uñas diseño ${n}`} />
                   ))}
                 </div>
               </div>
@@ -59,7 +56,7 @@ function Servicios() {
 
           {/* Ropa Online */}
           <div className="tarjeta servicio">
-            <img src="/src/assets/servicios/ropa.jpg" alt="Ropa online" />
+            <img src="/imagenes/servicios/ropa.jpg" alt="Ropa online" />
             <p><strong>Ropa Online</strong></p>
             <p>Venta de ropa por catálogo digital. Moda urbana y femenina.</p>
             <button onClick={() => toggleDetalles('ropa')}>Conocer más</button>
@@ -74,7 +71,7 @@ function Servicios() {
                 <h4>Galería</h4>
                 <div className="galeria">
                   {[1, 2, 3, 4].map((n) => (
-                    <img key={n} src={`/src/assets/servicios/ropa${n}.jpg`} alt={`Prenda ${n}`} />
+                    <img key={n} src={`/imagenes/servicios/ropa${n}.jpg`} alt={`Prenda ${n}`} />
                   ))}
                 </div>
               </div>
@@ -83,7 +80,7 @@ function Servicios() {
 
           {/* Streaming */}
           <div className="tarjeta servicio">
-            <img src="/src/assets/servicios/netflix.jpg" alt="Streaming" />
+            <img src="/imagenes/servicios/netflix.jpg" alt="Streaming" />
             <p><strong>Streaming</strong></p>
             <p>Plataformas compartidas como Netflix, HBO Max y más.</p>
             <button onClick={() => toggleDetalles('streaming')}>Conocer más</button>

@@ -50,6 +50,10 @@ p{
     overflow-y: hidden;
 
 }
+.carrusel_deportes::-webkit-scrollbar {
+  display: none;
+}
+
 
 .carrusel_deportes img{
     width: 300px;

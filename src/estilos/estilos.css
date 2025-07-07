@@ -1,16 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #f7f3ff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   overflow-x: hidden;
 }
 
 .bienvenida {
-  background-image: url(src/assets/inicio/bienvenida.jpg);
+  background-image: url(...); 
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
+  color: #f7f3ff;
   text-align: center;
   padding: 1.25rem 6.25rem; /* 20px 100px */
   height: 31.25rem; /* 500px */
@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   justify-content: center;
   font-size: 1.875rem; /* 30px */
+  
 }
 
 .bienvenida p {
@@ -33,23 +34,31 @@ body {
   border-radius: 50%;
 }
 
+
 .sobre_mi {
-  margin: 0 auto;
-  max-width: 56.25rem; /* 900px */
+  width: 100%;
+  background-color: #f7f3ff; /* Color lavanda pastel */
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 7rem;
-  gap: 1.875rem; /* 30px */
+  gap: 1.875rem;
   text-align: justify;
-  background-color: #ffffff;
 }
+.contenedor_sobre_mi {
+  max-width: 900px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
 
 .hobbies {
   background-color: #652D90;
   background-size: cover;
   background-position: center;
   padding: 4rem 2rem;
-  color: #ffffff;
+  color: #f7f3ff;
 }
 
 .hobbies_grid {
@@ -111,7 +120,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f7f3ff; 
 }
+
 
 .texto {
   max-width: 37.5rem; /* 600px */
@@ -198,159 +209,3 @@ body {
   background-color: #8c4cc5;
 }
 
-/* ========== SECCIÓN SERVICIOS ========== */
-.servicio img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 1rem;
-}
-
-.intro_servicios {
-  max-width: 900px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  color: #ffffff;
-  font-size: 1rem;
-  line-height: 1.6;
-   background-color: rgba(0, 0, 0, 0.5); 
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); 
-}
-
-.servicios {
-  min-height: 100vh; 
-  background-image: url(imagenes/servicios/fondoservicios.jpg);
-  background-size: cover; 
-  color: #ffffff;
-  padding: 2rem 2rem;
-  text-align: center;
-  padding-bottom: 3rem;
-  flex-direction: column;
-  justify-content: center;
-  display: flex;
-}
-
-.servicios h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
-}
-
-.subtitulo {
-  font-size: 1rem;
-  color: #e0e0e0;
-  margin-bottom: 3rem;
-}
-
-.servicios_grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.servicio {
-  max-width: 300px;
-  background-color: #ffffff10;
-  border-radius: 10px;
-  padding: 2rem;
-  color: #fff;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-}
-
-.servicio img {
-  width: 80px;
-  margin-bottom: 1rem;
-}
-
-.servicio h3 {
-  color: #ffc107;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.servicio p {
-  font-size: 1rem;
-  color: #ddd;
-}
-
-
-
-.servicio button {
-  margin-top: 1rem;
-  background-color: #b069e8;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.etiquetas {
-  margin-top: 1rem;
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.etiquetas span {
-  background-color: #fff;
-  color: #652D90;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.oculto {
-  display: none;
-}
-
-.detalles_servicio {
-  margin-top: 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 1rem;
-  border-radius: 8px;
-  color: #eee;
-  text-align: left;
-  font-size: 0.9rem;
-}
-
-.detalles_servicio h4 {
-  color: #ffc107;
-  margin-top: 1rem;
-}
-
-.detalles_servicio ul {
-  padding-left: 1.2rem;
-  margin: 0.5rem 0 1rem 0;
-}
-
-.detalles_servicio p a {
-  color: #ffc107;
-  text-decoration: none;
-}
-
-.detalles_servicio p a:hover {
-  text-decoration: underline;
-}
-
-.galeria {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
-}
-
-.galeria img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}

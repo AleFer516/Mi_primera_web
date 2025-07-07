@@ -7,52 +7,58 @@ import '../estilos/estilos_deportes.css';
 import Navbar from '../components/navbar';
 import { validarContacto } from '../funciones/inicio.js';
 
-
 function Inicio() {
   return (
     <>
-    <Navbar />
+      <Navbar />
 
-      <section className="bienvenida">
+      <section
+        className="bienvenida"
+        style={{ backgroundImage: `url(/imagenes/inicio/bienvenida.jpg)` }} 
+      >
         <h1>Bienvenido a mi sitio web personal</h1>
         <p>Aquí puedes conocer mi proyecto personal</p>
       </section>
 
       <section className="sobre_mi">
-        <img src="/src/assets/inicio/mi_foto.jpg" alt="mi foto" className="foto_circular" />
-        <div className="info">
-          <h2>Sobre mí</h2>
-          <p>
-            Soy Yesenia Fernández, estudiante de la carrera técnica de Analista Programador.
-            Me apasiona el mundo de la programación y disfruto aprender algo nuevo cada día.
-            Tengo 22 años y me considero una persona perseverante, curiosa y dedicada.
-            Cuando algo realmente me interesa, me enfoco al máximo en comprenderlo, dominarlo y crecer a partir de ello.
-            Mi objetivo es seguir desarrollando habilidades tanto técnicas como personales, para contribuir de forma significativa en los proyectos que participe.
-          </p>
+        <div className="contenedor_sobre_mi">
+          <img src="/imagenes/inicio/mi_foto.jpg" alt="mi foto" className="foto_circular" />
+          <div className="info">
+            <h2>Sobre mí</h2>
+            <p>
+              Soy Yesenia Fernández, estudiante de la carrera técnica de Analista Programador.
+              Me apasiona el mundo de la programación y disfruto aprender algo nuevo cada día.
+              Tengo 22 años y me considero una persona perseverante, curiosa y dedicada.
+              Cuando algo realmente me interesa, me enfoco al máximo en comprenderlo, dominarlo y crecer a partir de ello.
+              Mi objetivo es seguir desarrollando habilidades tanto técnicas como personales, para contribuir de forma significativa en los proyectos que participe.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="hobbies" id="hobbies">
         <div className="hobbies_grid">
           <div className="tarjeta">
-            <img src="/src/assets/hobbies/libros/lectura.jpg" alt="Lectura" />
+            <img src="/imagenes/hobbies/libros/lectura.jpg" alt="Lectura" />
             <p><a href="#">Lectura</a></p>
           </div>
           <div className="intro_centrada">
             <h3>Mis hobbies, mis pasiones</h3>
-            <p>Además del estudio y el trabajo, hay actividades que llenan mis días de energía, creatividad y equilibrio.  
-            Aquí comparto algunos de mis hobbies, aquellos que me inspiran, me relajan y me conectan con lo que más disfruto hacer en mi tiempo libre.</p>
+            <p>
+              Además del estudio y el trabajo, hay actividades que llenan mis días de energía, creatividad y equilibrio.  
+              Aquí comparto algunos de mis hobbies, aquellos que me inspiran, me relajan y me conectan con lo que más disfruto hacer en mi tiempo libre.
+            </p>
           </div>
           <div className="tarjeta">
-            <img src="/src/assets/hobbies/juegos/juegos.jpeg" alt="Juegos" />
+            <img src="/imagenes/hobbies/juegos/juegos.jpeg" alt="Juegos" />
             <p><a href="#">Juegos</a></p>
           </div>
           <div className="tarjeta">
-            <img src="/src/assets/hobbies/musica/musica.jpg" alt="Música" />
+            <img src="/imagenes/hobbies/musica/musica.jpg" alt="Música" />
             <p><a href="#">Música</a></p>
           </div>
           <div className="tarjeta">
-            <img src="/src/assets/hobbies/deportes/trekking.jpg" alt="Deportes" />
+            <img src="/imagenes/hobbies/deportes/trekking.jpg" alt="Deportes" />
             <p><a href="#">Deportes</a></p>
           </div>
         </div>
@@ -62,13 +68,15 @@ function Inicio() {
         <div className="texto">
           <p className="carrera">Analista programador</p>
           <h4>Mi camino en el mundo del conocimiento</h4>
-          <p>Mi formación ha sido una mezcla de creatividad y tecnología. Comencé estudiando Diseño e Integración Multimedia, donde aprendí sobre diseño de logos, 
+          <p>
+            Mi formación ha sido una mezcla de creatividad y tecnología. Comencé estudiando Diseño e Integración Multimedia, donde aprendí sobre diseño de logos, 
             páginas web, edición de video, uso de pantalla verde y otros aspectos del mundo audiovisual. Luego decidí explorar más el área técnica a través de un 
             curso de programación con Arduino, motivada por mi interés constante en la informática. Actualmente estoy estudiando la carrera de Analista Programador, 
             con la meta de seguir avanzando hacia la Ingeniería Informática. Cada paso ha sido una oportunidad para descubrir nuevas habilidades y seguir creciendo 
-            profesionalmente.</p>
+            profesionalmente.
+          </p>
         </div>
-        <img src="/src/assets/tecnologia.jpg" alt="fondo tecnología" />
+        <img src="/imagenes/inicio/tecnologia.jpg" alt="fondo tecnología" />
       </section>
 
       <section id="contacto" className="seccion_contacto">

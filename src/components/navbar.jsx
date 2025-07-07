@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './navbar.css'; // si quieres estilos específicos
 
-function navbar() {
+function Navbar() {
   return (
     <header>
       <div className="contenedor">
@@ -28,4 +28,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
