@@ -1,4 +1,4 @@
-function validarContacto() {
+export function validarContacto() {
   const nombre = document.getElementById("nombre");
   const correo = document.getElementById("correo");
   const mensaje = document.getElementById("mensaje");
@@ -20,16 +20,4 @@ function validarContacto() {
   mensaje.value = "";
 
   return false; 
-}
-
-
-
-function toggleDetalles(servicio) {
-  const detalles = document.getElementById(`detalles-${servicio}`);
-
-  if (detalles.classList.contains("oculto")) {
-    detalles.classList.remove("oculto");
-  } else {
-    detalles.classList.add("oculto");
-  }
 }
