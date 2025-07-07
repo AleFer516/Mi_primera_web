@@ -37,7 +37,7 @@ body {
 
 .sobre_mi {
   width: 100%;
-  background-color: #f7f3ff; /* Color lavanda pastel */
+  background-color: #f7f3ff; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +158,6 @@ body {
   object-fit: cover;
 }
 
-/* Sección de contacto ya estaba en rem */
 
 .seccion_contacto {
   background-color: #f3f0f8;

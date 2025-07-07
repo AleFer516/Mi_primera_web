@@ -6,7 +6,7 @@ header {
   padding: 1rem;
   height: 3.125rem; /* 50px */
   align-items: center;
-   z-index: 1000; /* <- AGREGAR ESTA LÍNEA */
+   z-index: 1000; 
 }
 
 .contenedor {

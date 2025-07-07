@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './navbar.css'; // si quieres estilos específicos
+import './navbar.css';
 
 function Navbar() {
   return (
@@ -8,11 +8,13 @@ function Navbar() {
         <div className="logo">Ale Fernandez</div>
         <nav>
           <ul>
-            <li><Link to="/">Inicio</Link></li>
+            {}
+            <li><a href="/#inicio">Inicio</a></li>
             <li><a href="/#estudios">Estudios</a></li>
             <li className="menu_hobbies">
               <a href="/#hobbies">Hobbies</a>
               <ul className="menu_contenido">
+                { }
                 <li><Link to="/lectura">Lectura</Link></li>
                 <li><Link to="/juegos">Juegos</Link></li>
                 <li><Link to="/musica">Música</Link></li>

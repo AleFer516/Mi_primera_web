@@ -1,4 +1,4 @@
-// src/funciones/deportes.js
+
 export function iniciarCarruselDeportes() {
   const carrusel = document.querySelector('.carrusel_deportes');
   if (!carrusel) return;

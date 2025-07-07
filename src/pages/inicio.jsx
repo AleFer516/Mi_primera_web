@@ -14,6 +14,7 @@ function Inicio() {
 
       <section
         className="bienvenida"
+        id="inicio"
         style={{ backgroundImage: `url(/imagenes/inicio/bienvenida.jpg)` }} 
       >
         <h1>Bienvenido a mi sitio web personal</h1>

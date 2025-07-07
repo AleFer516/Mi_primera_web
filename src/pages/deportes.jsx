@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import '../estilos/estilos.css';
 import Navbar from '../components/navbar';
-import { iniciarCarruselDeportes } from '../funciones/deportes'; // 👈
+import { iniciarCarruselDeportes } from '../funciones/deportes'; 
 
 function Deportes() {
   useEffect(() => {
-    iniciarCarruselDeportes(); // 👈
+    iniciarCarruselDeportes(); 
   }, []);
 
   return (

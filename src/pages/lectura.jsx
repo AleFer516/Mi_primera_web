@@ -9,7 +9,7 @@ function Lectura() {
   useEffect(() => {
     if (carruselRef.current) {
       const limpiar = activarScrollAutomatico(carruselRef.current);
-      return limpiar; // para limpiar intervalos y listeners al desmontar
+      return limpiar;
     }
   }, []);
 

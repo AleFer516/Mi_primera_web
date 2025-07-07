@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #2b0e3d; /* fondo general */
+  background-color: #2b0e3d; 
   font-family: cursive;
   overflow-x: hidden;
 }
 
 .servicios {
   min-height: 100vh;
-  background-color: #2b0e3d; /* morado profundo */
+  background-color: #2b0e3d; 
   color: #ffffff;
   padding: 2rem 2rem 3rem;
   display: flex;

@@ -5,11 +5,9 @@ import { iniciarCarruselJuegos } from '../funciones/juegos';
 
 function Juegos() {
   useEffect(() => {
-    // ✅ Bloquear scroll global solo al entrar
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
 
-    // ✅ Restaurar scroll al salir de la página
     return () => {
       document.body.style.overflow = prevOverflow || 'auto';
     };

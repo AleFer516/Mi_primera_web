@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import '../estilos/estilos_musica.css';
 import Navbar from '../components/navbar';
-import { iniciarCarruselMusica } from '../funciones/musica'; // 👈 agrega esto
+import { iniciarCarruselMusica } from '../funciones/musica'; 
 
 function Musica() {
   useEffect(() => {
-    iniciarCarruselMusica(); // 👈 y esto
+    iniciarCarruselMusica(); 
   }, []);
 
   return (
